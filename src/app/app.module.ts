@@ -36,9 +36,9 @@ import { IAppState, rootReducer, INITIAL_STATE } from './reducers/rootReducers';
 export class AppModule { 
 
       constructor(ngRedux: NgRedux<IAppState>) {
-      // ngRedux.configureStore(rootReducer, INITIAL_STATE);
-      this.ngRedux = ngRedux;
-      ngRedux.configureStore(rootReducer, INITIAL_STATE, [ createLogger() ]);
-      console.log(this.ngRedux.getState());
-    }
+
+            this.ngRedux = ngRedux;
+            ngRedux.configureStore(rootReducer, INITIAL_STATE, [ createLogger() ]);
+  
+       }
 }
