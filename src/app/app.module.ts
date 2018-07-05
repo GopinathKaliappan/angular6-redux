@@ -34,11 +34,10 @@ import { IAppState, rootReducer, INITIAL_STATE } from './reducers/rootReducers';
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-
+      ngRedux : NgRedux<IAppState>;
       constructor(ngRedux: NgRedux<IAppState>) {
 
             this.ngRedux = ngRedux;
             ngRedux.configureStore(rootReducer, INITIAL_STATE, [ createLogger() ]);
-  
        }
 }

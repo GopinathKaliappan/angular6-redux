@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
 
 
  @select() todos;  // Selecting Obervables  
-
+ ngRedux : NgRedux<IAppState>;
+ name = '';
 
  constructor (NgRedux: NgRedux<IAppState>) {
   
