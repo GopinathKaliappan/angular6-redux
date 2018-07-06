@@ -1,7 +1,22 @@
-# AngulareduxTodo
+# Redux Implemented in Angular6 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0-rc.0.
 
+
+## Steps 
+ 
+ 1.  git clone https://github.com/GopinathKaliappan/angular6-redux.git
+
+  2.  cd angular6-redux
+
+  3.  npm install 
+
+
+## Developer Notes 
+
+  This is simple implementation which is best way to start redux with angular6 ,
+
+ 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
