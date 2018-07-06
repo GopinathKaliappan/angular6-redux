@@ -2,14 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0-rc.0.
 
-
 ## Steps 
  
- 1.  git clone https://github.com/GopinathKaliappan/angular6-redux.git
+ git clone https://github.com/GopinathKaliappan/angular6-redux.git
 
-  2.  cd angular6-redux
+ cd angular6-redux
 
-  3.  npm install 
+ npm install 
 
 
 ## Developer Notes 
