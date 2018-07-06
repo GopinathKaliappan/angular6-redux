@@ -1,14 +1,15 @@
-# Redux Implemented in Angular6 
+# Redux Implentation in Angular6 
+   ** (Applicable for Angular2 +)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0-rc.0.
 
 ## Steps 
- 
- git clone https://github.com/GopinathKaliappan/angular6-redux.git
 
- cd angular6-redux
+-git clone https://github.com/GopinathKaliappan/angular6-redux.git
 
- npm install 
+-cd angular6-redux
+
+-npm install 
 
 
 ## Developer Notes 
