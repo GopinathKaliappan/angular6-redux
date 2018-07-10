@@ -9,17 +9,22 @@ import { ProfileComponent } from './profile/profile.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatBadgeModule } from '@angular/material/badge';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { createLogger } from 'redux-logger';
 
 import { IAppState, rootReducer, INITIAL_STATE } from './reducers/rootReducers';
+import { StoreService } from './store.service';
+import { ServiceForStoreComponent } from './service-for-store/service-for-store.component';
+import { ReversePipe } from './reverse.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    ServiceForStoreComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
@@ -27,13 +32,16 @@ import { IAppState, rootReducer, INITIAL_STATE } from './reducers/rootReducers';
     NgReduxModule,
     MatButtonModule,
     MatInputModule,
+    AngularFontAwesomeModule,
     MatCardModule,
     MatBadgeModule
   ],
-  providers: [],
+  providers: [StoreService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { 
+
       ngRedux : NgRedux<IAppState>;
       constructor(ngRedux: NgRedux<IAppState>) {
 

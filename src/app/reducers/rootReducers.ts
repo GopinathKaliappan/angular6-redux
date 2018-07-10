@@ -23,15 +23,19 @@ export const REMOVE_ALL_TODOS = 'REMOVE_ALL_TODOS';
 
 
 export function rootReducer(state: IAppState, action): IAppState {
+    let newState = { ...state };
     switch (action.type) {
-        case ADD_TODO:
+        case ADD_TODO: {
 
-            let newState = { ...state };
             newState.todos.push(action.todo);
             return { ...state, ...newState };
+        }
+        case TOGGLE_TODO: {
 
-        case TOGGLE_TODO:
-        	return state;
+            newState.todos[action.payload.index] = { ...newState.todos[action.payload.index], ...action.payload };
+        	return { ...state, ...newState };
+
+        }
 
 
         case REMOVE_TODO:

@@ -1,0 +1,29 @@
+<div style="width:100%">
+  
+  
+ <div class="card_adjuster" *ngFor="let t of todos | async; index as i">
+
+ 	<mat-card class="example-card">
+  <mat-card-header>
+    <img style="width:60px; height: 60px" src="https://avatars3.githubusercontent.com/u/18616443?s=400&v=4" />
+ 
+  </mat-card-header>
+
+  <mat-card-content>
+    <div>   
+        <h4>Store & Angular Services</h4>
+    </div>
+    <p>
+    	<mat-card-title>{{t.name}}</mat-card-title>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>  	
+   	   <fa class="mediume-icon" *ngIf="t.isCompleted" (click)="toggleTask(t.isCompleted, i)" name="cog" animation="">On Progress</fa>
+   	   <fa class="mediume-icon" color="blue" *ngIf="!t.isCompleted" (click)="toggleTask(t.isCompleted, i)" name="cog" animation="spin">On Progress</fa>
+  </mat-card-actions>
+</mat-card>
+ 		
+ 	
+  </div>
+
+ </div>

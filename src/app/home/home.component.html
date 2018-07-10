@@ -1,20 +1,28 @@
-<div>
-	<input  class="add-field" type="text" [(ngModel)]="name"  />
-	<form class="example-form">
-  			<div class="button-row">
-				   <button (click)="addTodo()" mat-fab>Add </button>
-			</div>
+<div style="width: 100%; display: block">
+	
+	<h5>Local Update ( Angular Way)</h5>
 
-	</form>
+<tr>
+ <td *ngFor="let t of todos | async; index as i" class="pad_5">
+    <mat-card >
+      <div>
+        <h3>Task {{ t.id | reverse }}</h3>
+      </div>
+       <div class="button-row start_button" >
+           
+        </div>
+      <div class="button-row stop-button ">
+          <button *ngIf="t.isCompleted" (click)="toggleTask(t.isCompleted, i, 'isCompleted')" class="green_button" mat-fab>
+           Start </button> 
+           <button *ngIf="!t.isCompleted" (click)="toggleTask(t.isCompleted, i, 'isCompleted')" class="red_button" mat-fab>Stop </button>
+           <button *ngIf="t.isOnHold" (click)="toggleTask(t.isOnHold, i, 'isOnHold')" class="orange_button" mat-fab>Hold </button>
+          <button *ngIf="!t.isOnHold" (click)="toggleTask(t.isOnHold, i, 'isOnHold')" class="green_button" mat-fab>Resume </button>                      
+      </div> 		 	
+      <div class="button-row stop_button " *ngIf="!t.isCompleted">
 
-	<h1>Local Update</h1>
-	<p (click)="callParent()">
-
+      </div>      
+    </mat-card>
+    <td>
+ 	</tr>	
   
-
-</p>
-
- <tr *ngFor="let t of todos | async">
- 	<mat-card>{{t.name}}</mat-card>	
-  </tr>
 </div>

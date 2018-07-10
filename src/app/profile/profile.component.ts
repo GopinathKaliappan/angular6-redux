@@ -11,7 +11,6 @@ import { IAppState } from '../reducers/rootReducers';
 
 export class ProfileComponent {
 
-  ngRedux : NgRedux<IAppState>;
   @select() todos; // Selecting Observables
   
 }

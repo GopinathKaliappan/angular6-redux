@@ -1,10 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-	<div style="width: 49%; display: inline-block;">
+	<div>
+		<input  class="add-field input_todo" type="text" [(ngModel)]="task"  />
+			<form class="example-form">
+  				<div class="button-row">
+				   <button (click)="addTodo()" mat-fab>Add todo </button>
+				</div>
+
+			</form>
+	</div>
+	<div style="width: 100%">
 		<app-home> </app-home>
 	</div>
-    <div style="width: 49%; display: inline-block;">
-		<app-profile> </app-profile>
-	</div>
-
+	<table width="100%">
+		<tr width="50%">
+	    	<td width="50%">
+				<app-profile> </app-profile>
+			</td>
+		
+			<td>
+				<app-service-for-store> </app-service-for-store>
+			</td>	
+		</tr>
+	</table>
   </div>

@@ -1,3 +1,4 @@
+
 .example-button-row {
   display: flex;
   align-items: center;
@@ -62,25 +63,11 @@
   width: 80%;
 }
 
-.orange_button {
-  background-color: orange;
-  color: white
-}
-.green_button {
-  background-color: green;
-  color: white;
+.mediume-icon {
+  font-size: 36px;
 }
 
-.red_button {
-  background-color: red;
-  color: white
+.card_adjuster {
+  width: 80%;
+  padding: 5px;
 }
-
-.pad_5 {
-  padding: 15px
-}
-
-.stop-button button {
-  margin-right: 5px;
-}
-

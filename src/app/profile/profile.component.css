@@ -1,0 +1,118 @@
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+
+.add-field {
+	width: 	100%;
+	font-size: 16px;
+	height: 	50px;
+	margin-top: 50px;
+	margin-bottom: 	10px;					
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.todo-icon {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+.status-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+}
+.delete-icon {
+  position: absolute;
+  bottom: 0%;
+  right: 5px;
+}
+
+.right-adjuster {
+  position: relative;
+  width: 20%;
+}
+
+.mediume-icon {
+  font-size: 50px;
+}
+
+.top_right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card_adjuster {
+  width: 80%;
+}
+.mediume-icon {
+  font-size: 36px;
+}
+
+.card_adjuster {
+  width: 80%;
+  padding: 5px;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange_button {
+  background-color: orange;
+  color: white
+}
+.green_button {
+  background-color: green;
+  color: white
+}
+
+.red_button {
+  background-color: red;
+  color: white
+}
+
+.running {
+  background-color: #4dba4d;
+    z-index: 0;
+    border-radius: 8px;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green; 
+}
+.green_icon {
+  color: green;
+}
+.green_button {
+  width:  100%;
+  display: block;
+  /*background-color: lime;*/
+  border-radius: 15px;
+  animation: mymove 5s infinite; 
+}
+@keyframes mymove {
+    0%   { background: pink;}
+    75%  { background: orange;}
+    100% { background: red;}
+    100% { background: grey;}
+}

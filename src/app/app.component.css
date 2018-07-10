@@ -1,0 +1,21 @@
+.mediume-icon{
+    font-size: 60px;
+}
+
+.input_todo {
+	margin-top: 25px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: pink;
+    padding: 12px;
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+.start_button {
+	background-color: lime;
+}
+.end_button {
+	background-color: lime;
+}
